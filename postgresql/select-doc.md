@@ -318,3 +318,25 @@ FROM Employees
 WHERE department_id IN (10,20,30,40)
 ORDER BY department_id;
 ```
+
+## Сортировка
+
+Результат выполнения оператора SELECT может быть
+упорядочен по значению одного или нескольких столбцов.
+Для этого служит предложение ORDER BY, которое имеет
+следующий синтаксис:
+
+```
+ORDER BY {имя столбца | номер столбца [ASC|DESC]}
+```
+
+___**Пример:**___
+
+```
+SELECT employee_id, first_name, last_name, department_id, salary
+FROM Employees
+WHERE department_id =30
+ORDER BY salary DESC;
+```
+
+
